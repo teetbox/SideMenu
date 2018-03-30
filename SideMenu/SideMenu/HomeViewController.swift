@@ -54,10 +54,8 @@ class HomeViewController: UIViewController {
     private func setupViews() {
         view.addSubview(sideMenu)
         navigationController?.view.addSubview(sideMenu)
-        sideMenu.layer.zPosition = 100
         view.addSubview(blackView)
         navigationController?.view.addSubview(blackView)
-        blackView.layer.zPosition = 99
         blackView.isHidden = true
         let tapGestureReco = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         blackView.addGestureRecognizer(tapGestureReco)
