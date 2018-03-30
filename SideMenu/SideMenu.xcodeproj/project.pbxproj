@@ -13,6 +13,11 @@
 		C904C111206DA87200D212EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C904C110206DA87200D212EB /* Assets.xcassets */; };
 		C904C114206DA87200D212EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C904C112206DA87200D212EB /* LaunchScreen.storyboard */; };
 		C904C11A206DAAD600D212EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904C119206DAAD600D212EB /* MenuViewController.swift */; };
+		C904C11C206DC57B00D212EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904C11B206DC57B00D212EB /* HomeViewController.swift */; };
+		C904C11E206DC84700D212EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904C11D206DC84700D212EB /* MainViewController.swift */; };
+		C904C120206DC89100D212EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904C11F206DC89100D212EB /* MenuViewController.swift */; };
+		C904C122206DC8E200D212EB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C904C121206DC8E200D212EB /* TabBarViewController.swift */; };
+		C94BBDE9206DCB8E007DBF7D /* UIViewController+AddChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BBDE8206DCB8E007DBF7D /* UIViewController+AddChildVC.swift */; };
 		C9538B82206C5CFC0075122D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9538B81206C5CFC0075122D /* AppDelegate.swift */; };
 		C9538B89206C5CFC0075122D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9538B88206C5CFC0075122D /* Assets.xcassets */; };
 		C9538B8C206C5CFC0075122D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9538B8A206C5CFC0075122D /* LaunchScreen.storyboard */; };
@@ -32,6 +37,11 @@
 		C904C113206DA87200D212EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C904C115206DA87200D212EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C904C119206DAAD600D212EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C904C11B206DC57B00D212EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C904C11D206DC84700D212EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C904C11F206DC89100D212EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C904C121206DC8E200D212EB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		C94BBDE8206DCB8E007DBF7D /* UIViewController+AddChildVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddChildVC.swift"; sourceTree = "<group>"; };
 		C9538B7E206C5CFC0075122D /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9538B81206C5CFC0075122D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9538B88206C5CFC0075122D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +77,7 @@
 			children = (
 				C904C109206DA87200D212EB /* AppDelegate.swift */,
 				C904C10B206DA87200D212EB /* ViewController.swift */,
+				C904C11B206DC57B00D212EB /* HomeViewController.swift */,
 				C904C119206DAAD600D212EB /* MenuViewController.swift */,
 				C904C10D206DA87200D212EB /* Main.storyboard */,
 				C904C110206DA87200D212EB /* Assets.xcassets */,
@@ -103,6 +114,9 @@
 				C9538B88206C5CFC0075122D /* Assets.xcassets */,
 				C9538B8A206C5CFC0075122D /* LaunchScreen.storyboard */,
 				C9538B8D206C5CFC0075122D /* Info.plist */,
+				C904C11D206DC84700D212EB /* MainViewController.swift */,
+				C904C11F206DC89100D212EB /* MenuViewController.swift */,
+				C904C121206DC8E200D212EB /* TabBarViewController.swift */,
 				C9538B97206C60420075122D /* Extensions */,
 			);
 			path = SideMenu;
@@ -114,6 +128,7 @@
 				C9538B98206C60420075122D /* UIColor+HEXString.swift */,
 				C9538B99206C60420075122D /* UIView+Constraint.swift */,
 				C9538B9A206C60420075122D /* UIApplication+StatusBar.swift */,
+				C94BBDE8206DCB8E007DBF7D /* UIViewController+AddChildVC.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,6 +239,7 @@
 				C904C10C206DA87200D212EB /* ViewController.swift in Sources */,
 				C904C11A206DAAD600D212EB /* MenuViewController.swift in Sources */,
 				C904C10A206DA87200D212EB /* AppDelegate.swift in Sources */,
+				C904C11C206DC57B00D212EB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,12 +247,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C904C11E206DC84700D212EB /* MainViewController.swift in Sources */,
 				C9538B9D206C60420075122D /* UIApplication+StatusBar.swift in Sources */,
+				C94BBDE9206DCB8E007DBF7D /* UIViewController+AddChildVC.swift in Sources */,
 				C9538B96206C5FB50075122D /* SideMenuView.swift in Sources */,
 				C9538B82206C5CFC0075122D /* AppDelegate.swift in Sources */,
+				C904C122206DC8E200D212EB /* TabBarViewController.swift in Sources */,
 				C9538B9C206C60420075122D /* UIView+Constraint.swift in Sources */,
 				C9538B9B206C60420075122D /* UIColor+HEXString.swift in Sources */,
 				C9538B94206C5D870075122D /* HomeViewController.swift in Sources */,
+				C904C120206DC89100D212EB /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
