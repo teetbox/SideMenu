@@ -16,7 +16,7 @@ class TabBarViewController: UITabBarController {
         view.alpha = 0
         let tapGesture = UITapGestureRecognizer(target: self, action:#selector(handleTap))
         view.addGestureRecognizer(tapGesture)
-        let swapGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
+        let swapGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleLeftSwipe))
         swapGesture.direction = .left
         view.addGestureRecognizer(swapGesture)
         return view
@@ -36,8 +36,12 @@ class TabBarViewController: UITabBarController {
         NotificationCenter.default.post(name: .tap, object: nil)
     }
     
-    @objc func handleSwipe() {
-        NotificationCenter.default.post(name: .swipe, object: nil)
+    @objc func handleLeftSwipe() {
+        NotificationCenter.default.post(name: .leftSwipe, object: nil)
+    }
+    
+    @objc func handleRightSwipe() {
+        NotificationCenter.default.post(name: .rightSwipe, object: nil)
     }
 
     private func setupViews() {
@@ -54,6 +58,10 @@ class TabBarViewController: UITabBarController {
         dummyViewController.navigationItem.title = title
         let menuButton = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(handleMenu))
         dummyViewController.navigationItem.leftBarButtonItem = menuButton
+        
+        let swapGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleRightSwipe))
+        swapGesture.direction = .right
+        view.addGestureRecognizer(swapGesture)
         
         let navController = UINavigationController(rootViewController: dummyViewController)
         navController.tabBarItem.title = title

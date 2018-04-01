@@ -11,7 +11,8 @@ import UIKit
 extension Notification.Name {
     static let menu = Notification.Name("menu")
     static let tap = Notification.Name("tap")
-    static let swipe = Notification.Name("swipe")
+    static let leftSwipe = Notification.Name("leftSwipe")
+    static let rightSwipe = Notification.Name("rightSwipe")
 }
 
 class MainViewController: UIViewController {
@@ -37,7 +38,8 @@ class MainViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(handleMenu), name: .menu, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleTap), name: .tap, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(handleSwipe), name: .swipe, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleLeftSwipe), name: .leftSwipe, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleRightSwipe), name: .rightSwipe, object: nil)
         
         setupViews()
     }
@@ -70,7 +72,11 @@ class MainViewController: UIViewController {
         handleMenu()
     }
     
-    @objc func handleSwipe() {
+    @objc func handleLeftSwipe() {
+        handleMenu()
+    }
+    
+    @objc func handleRightSwipe() {
         handleMenu()
     }
 

@@ -15,13 +15,13 @@ class MenuViewController: UIViewController {
 
         view.backgroundColor = .cyan
         
-        let swapGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
+        let swapGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleLeftSwipe))
         swapGesture.direction = .left
         view.addGestureRecognizer(swapGesture)
     }
     
-    @objc func handleSwipe() {
-        NotificationCenter.default.post(name: .swipe, object: nil)
+    @objc func handleLeftSwipe() {
+        NotificationCenter.default.post(name: .leftSwipe, object: nil)
     }
 
 }
