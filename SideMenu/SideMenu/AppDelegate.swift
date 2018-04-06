@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         window?.rootViewController = MainViewController()
-//        window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
         
         return true
     }
@@ -48,4 +47,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
